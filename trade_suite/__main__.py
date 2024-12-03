@@ -87,12 +87,12 @@ if __name__ == "__main__":
     )
 
     config_manager = ConfigManager()
-    exchanges = (
+    last_exchange = (
         config_manager.get_setting("last_exchange") or args.exchanges
     )  # add exchange list to initialize premptively
     emitter = SignalEmitter()
     influx = InfluxDB()
-    data = Data(influx, emitter, [exchanges])
+    data = Data(influx, emitter, [last_exchange])
 
     # EZ START LET'S GO
     with Viewport(data=data, config_manager=config_manager) as viewport:

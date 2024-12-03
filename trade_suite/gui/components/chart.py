@@ -371,7 +371,7 @@ class Chart:
             ],
             radius=volume * 10,
             color=[255, 255, 255, 255],
-            thickness=1,
+            thickness=0.5,
             parent=self.candlestick_plot,
         )
 

@@ -22,7 +22,7 @@ class MarketAggregator:
         ]
         self.influx = influx
 
-    def calc_trade_stats(self, exchange: str, trades: List[str]) -> None:
+    def calc_trade_stats(self, exchange: str, trades: List[str]) -> (str, str):
         """
         The calc_trade_stats function will be passed a particular exchange and tick data (containing the symbol,
         and other relevant information).
