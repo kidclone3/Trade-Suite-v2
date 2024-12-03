@@ -22,6 +22,7 @@ class Data(CCXTInterface):
         super().__init__(exchanges)
         self.agg = MarketAggregator(influx, emitter)
         self.emitter = emitter
+        self.influx = influx
         
         self.cache_dir = 'data/cache'
         if not os.path.exists(self.cache_dir):

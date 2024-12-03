@@ -9,6 +9,8 @@ from typing import Dict, List
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import ASYNCHRONOUS
 from influxdb_client.client.query_api_async import QueryApiAsync
+from dotenv import load_dotenv
+load_dotenv()
 
 
 class InfluxDB:

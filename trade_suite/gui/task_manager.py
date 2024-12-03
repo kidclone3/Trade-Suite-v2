@@ -133,7 +133,7 @@ class TaskManager:
                 symbols=[symbol],
                 timeframes=[timeframe],
                 since=since,
-                write_to_db=False,
+                write_to_db=True,
             )
         )
 
