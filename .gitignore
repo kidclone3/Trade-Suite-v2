@@ -11,3 +11,6 @@ trade_suite\architecture.drawio
 # cache
 **/__pycache__/
 data/cache
+
+# idea
+.idea/
